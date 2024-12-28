@@ -22,11 +22,11 @@ Software Version 1.0
 // =======================================================================================================
 //
 
-#define OUT1 0       // Pin 5
-#define OUT2 1       // Pin 6
-#define SERVO_IN 0   // Pin 7 = Interrupt 0 Servo signal input
+#define OUT1 0       // Pin 5 RZ7886 FI
+#define OUT2 1       // Pin 6 RZ7886 BI
+#define SERVO_IN 0   // Pin 7 = Interrupt 0 Servo PWM signal input from receiver
 #define CONFIG_IN1 3 // Pin 2 brake off, if connected to GND
-#define CONFIG_IN2 4 // Pin 3
+#define CONFIG_IN2 4 // Pin 3 max. speed 75%, if connected to GND
 
 volatile int pwm_value = 0;
 volatile int prev_time = 0;
